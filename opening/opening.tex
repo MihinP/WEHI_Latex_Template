@@ -26,13 +26,13 @@
 % About the document
 % Collaborators, repositories, social networks, links, etc.
 % Feel free to edit this doc:
-\input{opening/about}
+% \input{opening/about}
 
 % Abstract
 \input{opening/abstract}
 
 % Executive overview
-\input{opening/executive_overview.tex}  % Optional: UPV stuff
+% \input{opening/executive_overview.tex}  % Optional: UPV stuff
 
 % Publications
 \input{opening/publications}  % Optional
@@ -43,7 +43,7 @@
 % Dedication
 % To whom do you dedicate the thesis? Or maybe include a quote, poem, etc. Free space for yourself.
 % Delete only if you are too manly for these things
-\input{opening/dedication}
+% \input{opening/dedication}
 
 
 
@@ -63,27 +63,25 @@
 \begingroup
 
     % Greatly compress space used by TOC, LOF and LOT
-    \renewcommand{\baselinestretch}{1.0}  % less spacing
+    \renewcommand{\baselinestretch}{1}  % less spacing
     \small  % smaller font size
     \setlength{\parskip}{0mm}  % Paragraph skip 0mm
 
 
     % List of Contents
     {
-        \renewcommand{\baselinestretch}{1.0}  % spacing. 0.95 is a good compromise if needed
         \tableofcontents
-        \singlespacing
         
         \addcontentsline{toc}{chapter}{Table of contents}
     }
     
-    % List of Figures
+    % % List of Figures
     {
         \listoffigures
         \addcontentsline{toc}{chapter}{List of figures}
     }
     
-    % List of Tables
+    % % List of Tables
     {
         \listoftables
         \addcontentsline{toc}{chapter}{List of tables}
@@ -91,8 +89,8 @@
     
     % List of Listings -- uncomment if necessary
     {
-        % \listoflistings
-        % \addcontentsline{toc}{chapter}{List of listings}
+        \listoflistings
+        \addcontentsline{toc}{chapter}{List of listings}
 
         % \listof{lstlisting}{Code listings} % old code
     }

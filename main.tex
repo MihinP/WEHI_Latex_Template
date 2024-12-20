@@ -1,55 +1,32 @@
-% 
-%            ,,                                        
-%          `7MM            _.o9                                
-%            MM                                             
-%  ,6"Yb.    MM  ,p6"bo   ,6"Yb.  M"""MMV  ,6"Yb.  `7Mb,od8 
-% 8)   MM    MM 6M'  OO  8)   MM  '  AMV  8)   MM    MM' "' 
-%  ,pm9MM    MM 8M        ,pm9MM    AMV    ,pm9MM    MM     
-% 8M   MM    MM YM.    , 8M   MM   AMV  , 8M   MM    MM     
-% `Moo9^Yo..JMML.YMbmd'  `Moo9^Yo.AMMmmmM `Moo9^Yo..JMML.   
-% 
-% 
-% Free, Open-Source Thesis template for LaTeX
-% https://github.com/dpmj/alcazar
-
-
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% PREAMBLE
-
-\documentclass[twoside, openright, 12pt, final]{report}
-
+% \documentclass[twoside, openright, 11pt]{report}
+\documentclass[11pt]{report}
 
 % ------------------------------------------------------------------------------
 % Variables
 
 % Title for the title page 
-\newcommand{\thesisTitle}{Alcázar: a free and open source template for academic papers, for nerdy kids who do boring stuff like theses with endless titles.}
-% Title for the pages' heading 
-\newcommand{\thesisTitleShort}{Alcázar: a free and open source template for academic works.}
+% Define commands for thesis/document information
+\newcommand{\thesisTitle}{<INSERT THESIS TITLE HERE>}
+% Title for the pages' heading
+\newcommand{\thesisTitleShort}{<INSERT SHORT TITLE HERE>}
 
-\newcommand{\thesisType}{Master's Thesis}  % Bachelor's Thesis, Master's Thesis, PhD Thesis...
-\newcommand{\thesisDegree}{Master's Degree}  % Bachelor's Degree, Master's Degree, PhD...
-\newcommand{\thesisArea}{Typesetting Engineering}  % Area of knowledge
+\newcommand{\thesisType}{<INSERT THESIS TYPE HERE>}  % e.g., Bachelor's Thesis, Master's Thesis, PhD Thesis...
+\newcommand{\thesisDegree}{<INSERT DEGREE NAME HERE>}  % e.g., Bachelor's Degree, Master's Degree, PhD...
+\newcommand{\thesisArea}{<INSERT AREA OF KNOWLEDGE HERE>}  % e.g., Engineering, Science, IT...
 
-\newcommand{\thesisAuthor}{Name of the author of the thesis}
-\newcommand{\thesisTutor}{Name of the supervisor of the thesis}  
+\newcommand{\thesisAuthor}{<INSERT AUTHOR NAME HERE>}
+\newcommand{\thesisTutor}{<INSERT TUTOR/SUPERVISOR NAMES HERE>}  
 
-\newcommand{\thesisYear}{2077}  % Date of the thesis' submission or defense 
-\newcommand{\thesisMonth}{June}
-\newcommand{\thesisDate}{{\thesisMonth} {\thesisYear}}
-\newcommand{\thesisAcademicCourse}{2076/2077}  % During which academic year(s) was the thesis developed
+\newcommand{\thesisYear}{<INSERT YEAR HERE>}  % e.g., Year of submission or defense
 
-\newcommand{\thesisSchool}{University of Misco}
-\newcommand{\thesisAddress}{Fake avenue 00, Region, Country}
-\newcommand{\thesisDepartment}{Based department}
+\newcommand{\thesisDepartment}{<INSERT DEPARTMENT AND INSTITUTION HERE>}
 
-\newcommand{\thesisKeywords}{Keyword 1, Keyword 2, Keyword 3, Keyword 4, Keyword 4, Keyword 5, Keyword 6, Keyword 7, Keyword 8, Keyword 9, Keyword 10, Keyword N}  
 % For the abstract and indexing
+
 
 % ------------------------------------------------------------------------------
 % Import document style
 \usepackage{style/alcazar}
-
 
 % END PREAMBLE
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -70,10 +47,7 @@
 \include{bibliography/bibliography.tex}
 
 % Addendum - secondary text
-\include{text/appendix/appendix.tex}
-
-% It's nice to say thanks. 
-% \include{text/appendix/thanks}  % Comment this line if you feel like it.
+% \include{text/appendix/appendix.tex}
 
 \end{document}
 
