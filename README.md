@@ -1,32 +1,65 @@
-<p align="center">
-<img src="figures/examples/alcazar-title.jpg" width="100%"/>
-</p>
+# WEHI/UniMelb LaTeX Thesis Template
 
-<p align="center">
-<img src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg" height="24px"/>
-</p>
-
-
-<p align="center"><b>
-<a href="https://raw.githubusercontent.com/dpmj/alcazar/main/main.pdf">See PDF Preview</a></b>
-</p>
-
-
-## Philosophy
-
-- KISS.
-- Easy to use.
-- Organized, elegant, coherent and consistent.
-- Compact, but not crowded.
-- Compatible with `pdflatex`.
-- No strange packages.
-
+A comprehensive LaTeX template for Honours, Masters, and PhD theses, specifically tailored for submission to the Walter and Eliza Hall Institute of Medical Research (WEHI) and the University of Melbourne. This template is based on the Alcázar template by Juan Del Pino Mena, adapted to meet WEHI and University of Melbourne requirements.
 
 ## Features
 
-<p align="center">
-<img src="figures/examples/alcazar-feature-display.jpg" width="100%"/>
-</p>
+- Pre-configured thesis structure following WEHI/UniMelb guidelines
+- Customizable title page with WEHI and University of Melbourne branding
+- Built-in citation and bibliography management
+- Chapter and section templates
+- Figure and table management
+- Support for mathematical equations and scientific notation
+- Customizable page layouts and formatting
+
+## Prerequisites
+
+To use this template, you'll need:
+- A LaTeX distribution (TeX Live or MiKTeX recommended)
+- A text editor or LaTeX IDE (VSCode, TeXmaker, or Overleaf recommended)
+- Basic familiarity with LaTeX syntax
+
+## Usage
+
+1. Edit `main.tex` to customize your document structure
+2. Add your chapters in the `chapters/` directory
+3. Place your figures in the `figures/` directory
+4. Update your bibliography in the `bibliography/` directory
+5. Compile using your preferred LaTeX compiler
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+## Credits
+
+- Original Alcázar template by Juan Del Pino Mena
+- Adapted for WEHI/UniMelb by Mihin Perera
+- Contributors to the template (see [CONTRIBUTORS.md](CONTRIBUTORS.md))
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md) - see the LICENSE file for details.
+
+## Support
+
+For template-specific issues, please open an issue on GitHub. For institution-specific questions:
+- WEHI graduate research: [education@wehi.edu.au]
+- University of Melbourne graduate research: [[contact details](https://research.unimelb.edu.au/contact)]
+
+## Citation
+
+If you use this template for your thesis, please consider citing it:
+
+```bibtex
+@misc{wehi-unimelb-thesis-template,
+  author = {Perera, Mihin},
+  title = {WEHI/UniMelb LaTeX Thesis Template},
+  year = {2024},
+  publisher = {GitHub},
+  url = {https://github.com/[username]/wehi-unimelb-thesis-template}
+}
+```
 
 
 ## Requirements
