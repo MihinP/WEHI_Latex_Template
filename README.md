@@ -2,6 +2,8 @@
 
 A comprehensive LaTeX template for Honours, Masters, and PhD theses, specifically tailored for submission to the Walter and Eliza Hall Institute of Medical Research (WEHI) and the University of Melbourne. This template is based on the Alcázar template by Juan Del Pino Mena, adapted to meet WEHI and University of Melbourne requirements.
 
+![image](https://github.com/user-attachments/assets/c6f6ac9a-9311-417f-a614-fdcceafaf295)
+
 ## Features
 
 - Pre-configured thesis structure following WEHI/UniMelb guidelines
