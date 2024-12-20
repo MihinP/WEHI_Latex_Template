@@ -149,7 +149,7 @@ The file structure of the template is simple and self-explanatory:
 
 ## Local Build Instructions
 
-While this guide focuses on Overleaf usage, complete instructions for building the template locally are available in [in the original template by Juan Alcazar](https://github.com/dpmj/alcazar). If you prefer to work locally:
+While this guide focuses on Overleaf usage, complete instructions for building the template locally are available in [in the original template by Juan](https://github.com/dpmj/alcazar). If you prefer to work locally:
 
 1. Visit the [original template's GitHub repository](https://github.com/dpmj/alcazar)
 2. Refer to the main README.md file
