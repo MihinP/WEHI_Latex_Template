@@ -11,7 +11,7 @@ A comprehensive LaTeX template for Honours, Masters, and PhD theses, specificall
 - Built-in citation and bibliography management
 - Chapter and section templates
 - Figure and table management
-- Support for mathematical equations and scientific notation
+- Support for mathematical equations, scientific notation and formatted code snippets
 - Customizable page layouts and formatting
 
 ## Prerequisites
@@ -93,8 +93,7 @@ The file structure of the template is simple and self-explanatory:
 ### Template Customization
 
 1. **Personal Information**
-   - Open `frontmatter/title.tex`
-   - - In `main.tex` you will find some variable definitions, fill them in according to your thesis and the document will update all occurrences automatically. Update the following fields:
+   - In `main.tex` you will find some variable definitions, fill them in according to your thesis and the document will update all occurrences automatically. Update the following fields:
      - Thesis title
      - Your full name
      - Department/Lab information
@@ -102,13 +101,12 @@ The file structure of the template is simple and self-explanatory:
      - Submission date
 
 2. **Declaration and Abstract**
-   - Edit `frontmatter/declaration.tex` with your declaration
-   - Update `frontmatter/abstract.tex` with your abstract
+   - Edit `opening/acknowledgements.tex` with your declaration
+   - Update `opening/abstract.tex` with your abstract
 
 3. **Chapter Management**
    - All chapter files are in the `chapters/` directory
    - Create new chapters by copying the existing chapter template
-   - Add new chapters to `main.tex` using `\include{chapters/chapter-name}`
 
 ### Working with References
 
@@ -217,7 +215,3 @@ If you use this template for your thesis, please consider acknowledging or citin
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-
-## Disclaimer
-
-This work is not affiliated with any institution, and the references, logos, and the like are merely examples of usage. Any third-party resources included in this repository are the property of their respective owners, and are provided for convenience only.
