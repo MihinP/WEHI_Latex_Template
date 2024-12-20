@@ -15,17 +15,135 @@ A comprehensive LaTeX template for Honours, Masters, and PhD theses, specificall
 ## Prerequisites
 
 To use this template, you'll need:
-- A LaTeX distribution (TeX Live or MiKTeX recommended)
-- A text editor or LaTeX IDE (VSCode, TeXmaker, or Overleaf recommended)
+- A text editor or LaTeX IDE (Overleaf recommended)
 - Basic familiarity with LaTeX syntax
 
-## Usage
+# Using the Template in Overleaf
 
-1. Edit `main.tex` to customize your document structure
-2. Add your chapters in the `chapters/` directory
-3. Place your figures in the `figures/` directory
-4. Update your bibliography in the `bibliography/` directory
-5. Compile using your preferred LaTeX compiler
+## Initial Setup
+
+1. **Download the Template**
+   - Go to the GitHub repository
+   - Click the green "Code" button
+   - Select "Download ZIP"
+
+2. **Create New Overleaf Project**
+   - Log into your Overleaf account
+   - Click "New Project"
+   - Select "Upload Project"
+   - Drag and drop the downloaded ZIP file or click to browse
+   - Wait for the upload to complete
+
+## Project Configuration
+
+1. **Compiler Settings**
+   - Click on "Menu" in the top-left corner
+   - Under "Compiler", select "pdfLaTeX"
+   - Under "Main document", ensure `main.tex` is selected
+
+2. **Recommended Project Settings**
+   - Enable "Auto-compile" (Toggle in the top bar)
+   - Set spell-check language as appropriate
+   - Enable "Track Changes" if collaborating with supervisors
+
+## Template Customization
+
+1. **Personal Information**
+   - Open `frontmatter/title.tex`
+   - - In `main.tex` you will find some variable definitions, fill them in according to your thesis and the document will update all occurrences automatically. Update the following fields:
+     - Thesis title
+     - Your full name
+     - Department/Lab information
+     - Supervisor details
+     - Submission date
+
+2. **Declaration and Abstract**
+   - Edit `frontmatter/declaration.tex` with your declaration
+   - Update `frontmatter/abstract.tex` with your abstract
+
+3. **Chapter Management**
+   - All chapter files are in the `chapters/` directory
+   - Create new chapters by copying the existing chapter template
+   - Add new chapters to `main.tex` using `\include{chapters/chapter-name}`
+
+## Working with References
+
+1. **Bibliography Setup**
+   - Your references go in `bibliography/references.bib`
+   - Use BibTeX format for all references
+   - The template uses the numbered citation style by default (IEEE style)
+
+2. **Adding Citations**
+   - Use `\cite{key}` for standard citations. Ensure your reference is in `bibliography/references.bib`
+
+## Figures and Tables
+
+1. **Adding Figures**
+   - Upload figures to the `figures/` directory
+   - Use the provided figure templates in the example chapters
+   - Recommended figure formats: PDF (vector), PNG (raster)
+
+2. **Creating Tables**
+   - Use the table templates provided in the example chapters
+   - Consider using online table generators for complex tables
+   - Remember to add table captions above the table
+
+## Common Issues and Solutions
+
+1. **Compilation Errors**
+   - Clear cached files using "Clear Cache" in Overleaf menu
+   - Check the log file for specific error messages
+   - Ensure all referenced files are properly uploaded
+
+2. **Figure Issues**
+   - Verify figure paths are correct (case-sensitive)
+   - Check figure formats are compatible
+   - Ensure figures are actually uploaded to Overleaf
+
+3. **Bibliography Problems**
+   - Recompile project multiple times
+   - Check for proper BibTeX formatting
+   - Verify all cited references exist in `.bib` file
+
+## Best Practices
+
+1. **Regular Backups**
+   - Use Overleaf's GitHub synchronization if available
+   - Download project ZIP regularly
+   - Enable version history (available in paid plans)
+
+2. **Performance Tips**
+   - Comment out unused chapters while working
+   - Compile one chapter at a time during heavy editing
+
+3. **Collaboration**
+   - Use consistent naming conventions
+   - Comment your LaTeX code
+   - Use Overleaf's share feature for supervisor review
+
+## Local Build Instructions
+
+While this guide focuses on Overleaf usage, complete instructions for building the template locally are available in [in the original template by Juan Alcazar](https://github.com/dpmj/alcazar). If you prefer to work locally:
+
+1. Visit the [original template's GitHub repository](https://github.com/dpmj/alcazar)
+2. Refer to the main README.md file
+3. Follow the "Local Installation" or "Building Locally" section
+
+Local builds can offer advantages like:
+- Faster compilation times
+- Offline access
+- Integration with local text editors
+- Version control with Git
+- Custom LaTeX package management
+
+However, for most users, especially those new to LaTeX, Overleaf provides the easiest way to get started with this template.
+
+## Getting Help
+
+- For template issues: Create an issue on GitHub
+- For Overleaf-specific problems: Consult [Overleaf Documentation](https://www.overleaf.com/learn)
+- For WEHI/UniMelb specific questions: Contact your graduate research office
+- For local build support: See the repository's documentation and README
 
 ## Contributing
 
@@ -46,10 +164,11 @@ This project is licensed under the [MIT License](LICENSE.md) - see the LICENSE f
 For template-specific issues, please open an issue on GitHub. For institution-specific questions:
 - WEHI graduate research: [education@wehi.edu.au]
 - University of Melbourne graduate research: [[contact details](https://research.unimelb.edu.au/contact)]
+- For Overleaf-specific problems: Consult [Overleaf Documentation](https://www.overleaf.com/learn)
 
 ## Citation
 
-If you use this template for your thesis, please consider citing it:
+If you use this template for your thesis, please consider acknowledging or citing it and the original template creator:
 
 ```bibtex
 @misc{wehi-unimelb-thesis-template,
@@ -59,94 +178,18 @@ If you use this template for your thesis, please consider citing it:
   publisher = {GitHub},
   url = {https://github.com/[username]/wehi-unimelb-thesis-template}
 }
-```
-
-
-## Requirements
-
-- `biber` for `biblatex`.
-- `python 3` and `pygments` for the `minted` package.
-
-
-## Build
-
-### CLI, makefiles, etc.
-
-This project can be easily built using the following commands with these recommended parameters. The `-shell-escape' flag is required for the `minted' package.
-
-```bash
-$ pdflatex -shell-escape -synctex=1 -interaction=nonstopmode -file-line-error main
-$ biber main
-$ makeglossaries main
-$ pdflatex -shell-escape -synctex=1 -interaction=nonstopmode -file-line-error main
-$ pdflatex -shell-escape -synctex=1 -interaction=nonstopmode -file-line-error main
-```
-
-### Overleaf
-
-Works out of the box, no configuration required. Simply download this repo as a `.zip` and then upload the archive to Overleaf as a new project.
-
-### LaTeX Workshop extension for VS Code / Codium
-
-If you are using the LaTeX Workshop extension by James Yu, you need to add the following tools to your configuration file, under `latex-workshop.latex.tools` (In the UI, navigate to *Latex-workshop > Latex: Recipes > Edit in settings.json*): 
-
-```json
-{
-    "name": "biber",
-    "command": "biber",
-    "args": [
-        "%DOC%"
-    ],
-},
-{
-    "name": "makeglossaries",
-    "command": "makeglossaries",
-    "args": [
-        "%DOCFILE%"
-    ],
+@misc{alcazar-thesis-template,
+  author = {Del Pino Mena, Juan},
+  title = {Alcazar: A free and Open-Source LaTeX template for academic works},
+  year = {2023},
+  publisher = {GitHub},
+  url = {https://github.com/dpmj/alcazar}
 }
 ```
-
-Edit the `pdflatex` entry as follows to include the `-shell-escape` argument, necessary for the `minted` package.
-
-```json
-{
-    "name": "pdflatex",
-    "command": "pdflatex",
-    "args": [
-        "-shell-escape",
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "%DOC%"
-    ],
-    "env": {}
-}
-```
-
-Now add a new recipe, under `latex-workshop.latex.recipes` (In the UI: *Latex-workshop > Latex: Tools > Edit in settings.json*):
-
-```json
-{
-    "name": "alcazar",
-    "tools": [
-        "pdflatex",
-        "makeglossaries",
-        "biber",
-        "pdflatex",
-        "pdflatex"
-    ]
-}
-```
-
-And run the `alcazar' recipe on a `.tex' file from the project. 
-
-**Note:** If you keep getting a `makeglossaries` error saying that `main.aux` could not be found, set the `latex-workshop.latex.autoBuild.cleanAndRetry.enabled` setting to `false` (in the UI, uncheck *"Latex-workshop > Latex > AutoBuild > Clean and retry: Enabled"*)
-
 
 ## File structure
 
-The file structure of Alcázar is simple and self-explanatory:
+The file structure of the template is simple and self-explanatory:
 
 ```
 ./
@@ -186,8 +229,7 @@ The file structure of Alcázar is simple and self-explanatory:
 └── main.tex                    # The main document.
 ```
 
-- In `main.tex` you will find some variable definitions, fill them in according to your thesis and the document will update all occurrences automatically.
-- Fill in your author information in the `opening/about.tex` file.
+
 
 
 ## License
