@@ -181,7 +181,6 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 - Original Alcázar template by Juan Del Pino Mena
 - Adapted for WEHI/UniMelb by Mihin Perera
-- Contributors to the template (see [CONTRIBUTORS.md](CONTRIBUTORS.md))
 
 
 ## Support
